@@ -1,9 +1,9 @@
 var estimater = require('./estimator');
 alert("Loading now ... ");
   
-document.addEventListener('load', function(){ alert("Js loaded .");
+document.addEventListener('load', function(){ alert("Ready to take request for estimates .");
 					     
-	document.querySelector("#data-go-estimate").addEventListener('click',function(){ 
+	document.querySelector("#data-go-estimate").addEventListener('click',function(){ alert("Busy reading form data ...");
 			var periodType = document.querySelector('select[name="data-period-type"]').value;
 			var timeToElapse = document.querySelector('input[name="data-time-to-elapse"]').value;
 			var reportedCases = document.querySelector('input[name="data-reported-cases"]').value;
