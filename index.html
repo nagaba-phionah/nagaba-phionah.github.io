@@ -1,11 +1,12 @@
 <html>
-<head>
-	<title> Assessment </title>
+<head> 
+	<title> Assessment | Nagaba Phionah</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="discription" content="BuildForSDG Cohort-1 Assessment. Nagaba phionah COVID-19 programming project assessment" />
-	<script type="text/javascript" src="front-end-index.js"></script>
-	<link rel="stylesheet" type="text/css" href="front-end-index.css">
-	</head>
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	 <script data-main="js/main" src="js/require.js"></script> 
+</head>
 
 	<!-- 
 	data = {
@@ -26,7 +27,8 @@
 	
 <body>
 	<div>
-		<center>
+		<center> 
+			<h2> <b>Nagaba Phionah:</b> COVID-19 impct estimator project </h2> 
 		<table width="80%" name="table1">
 			<tr> <th colspan="2"> Form </th></tr> 
 			<tr> <th>periodType </th> <td> <select type="text" name="data-period-type" id="data-period-type"> <option value="days">days</option><option value="weeks">weeks</option><option value="months">months</option> </select> </td> </tr>
@@ -37,6 +39,10 @@
 			<tr> <th></th> <td> <button name="data-go-estimate" id="data-go-estimate"> Submit </button> </td> </tr>
 		</table>
 		</center>
-	</div>
+	</div> 
+	<hr/>
+	<div id="output-div" style="padding:3%; border:3px solid white; border-radius:8px; min-height:150px">
+		<h3 id="output-div-headline" style="background:palegren; color:black; font-weight:700; "> Response  </h3>
+	</div> 
 </body>
 </html>
