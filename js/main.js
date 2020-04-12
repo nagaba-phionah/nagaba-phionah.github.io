@@ -1,4 +1,4 @@
-var estimater = require('./estimator');
+var estimater = require('../src/estimator');
   
 document.addEventListener('load', function(){
 	document.querySelector("#data-go-estimate").addEventListener('click',function(){ 
