@@ -1,0 +1,6 @@
+body{  
+  background:linen; padding:0px margin:0px;
+}
+
+table tr:nth-child(even){ background:wheat; }
+table tr:nth-child(odd){ background:white; }
