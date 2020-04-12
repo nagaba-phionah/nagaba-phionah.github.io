@@ -1,7 +1,7 @@
 var estimater = require('./estimator');
-alert("Loading javascript ... ");
+alert("Loading javascript again ... ");
   
-document.addEventListener('load', function(){ alert("Js loaded");
+document.addEventListener('load', function(){ alert("Js loaded .");
 					     
 	document.querySelector("#data-go-estimate").addEventListener('click',function(){ 
 			var periodType = document.querySelector('select[name="data-period-type"]').value;
