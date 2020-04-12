@@ -1,4 +1,5 @@
 //var estimater = require('./estimator');
+alert("Loading javascript ... ");
   
 document.addEventListener('load', function(){ alert("Js loaded");
 					     
