@@ -1,8 +1,6 @@
-//var estimater = require('./estimator');
-alert("Loading javascript once again ... ");
+var estimater = require('./estimator');
   
-document.addEventListener('load', function(){ alert("Js loaded .");
-					     
+document.addEventListener('load', function(){
 	document.querySelector("#data-go-estimate").addEventListener('click',function(){ 
 			var periodType = document.querySelector('select[name="data-period-type"]').value;
 			var timeToElapse = document.querySelector('input[name="data-time-to-elapse"]').value;

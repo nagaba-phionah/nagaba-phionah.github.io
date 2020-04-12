@@ -13,12 +13,12 @@ const covid19ImpactEstimator = (data) => {
 		population: 66622705,
 		totalHospitalBeds: 1380614
 	}; */
-	
-	let MyOutput = {
+	 
+	let MyOutput = { 
 		data: data,			// the input data I received
 		impact: {},			// my best case estimation
 		severeImpact: {}  // my severe case estimation 
-	}
+	} 
 	const requestedTimeInDays = nomalizeTimeIntoDays(MyOutput.data.periodType, MyOutput.data.periodType.timeToElapse);
 	MyOutput.impact.currentlyInfected = MyOutput.data.reportedCases*10;
 	MyOutput.impact.infectionsByRequestedTime = MyOutput.impact.currentlyInfected*(2^(requestedTimeInDays/3));
@@ -35,7 +35,7 @@ const covid19ImpactEstimator = (data) => {
 	MyOutput.severeImpact.casesForICUByRequestedTime = 0.05*MyOutput.severeImpact.infectionsByRequestedTime;
 	MyOutput.severeImpact.casesForVentilatorsByRequestedTime = 0.02*MyOutput.severeImpact.infectionsByRequestedTime;
 	MyOutput.severeImpact.dolarsInFlight = (MyOutput.data.region.avgDailyIncomePopulation*MyOutput.data.population)*(MyOutput.data.region.avgDailyIncomeInUSD*MyOutput.severeImpact.infectionsByRequestedTime)*requestedTimeInDays;      
-	return MyOutput;
+	return MyOutput; 
 };
 
 const nomalizeTimeIntoDays = (periodType, timeToElapse) => {
